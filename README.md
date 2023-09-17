@@ -1,2 +1,2 @@
 # mathoperations
-A simple Class to Perform basic math operations and determine which one produces the given output, using two given inputs
+A simple java program designed for performing basic mathematical operations and determining which operation(s) yields a given output integer, based on a pair of provided integer values.
