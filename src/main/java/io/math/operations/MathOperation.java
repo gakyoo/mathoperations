@@ -1,6 +1,6 @@
 package io.math.operations;
 
-public class MathOperation{
+public class MathOperation {
 
     public String determineMathOperation(int number1, int number2, int number3){
 
@@ -29,8 +29,12 @@ public class MathOperation{
                     break;
 
                 case "/":
-                    if ((number1 / number2) == number3) {
-                        operation += mOperation;
+                    try{
+                        if ((number1 / number2) == number3) {
+                            operation += mOperation;
+                        }
+                    } catch (ArithmeticException e) {
+                        //System.out.println("Division by zero is not possible");
                     }
                     break;
             }
